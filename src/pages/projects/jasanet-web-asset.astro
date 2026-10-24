@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>    Asset Management PT Jasanet | Arif Febrianto</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/assets/app-gCiAbyz9.css">
+  <script type="module" src="/assets/main-DSFVCk8T.js"></script>
+</head>
+<body class="min-h-screen bg-background text-foreground font-sans antialiased relative" x-data x-init="$store.global.init()">
+  <div class="flickering-grid" x-data="flickeringGrid({ squareSize: 2, gridGap: 2, maxOpacity: 0.3 })">
+    <canvas x-ref="canvas" class="pointer-events-none"></canvas>
+  </div>
+  <div class="relative z-10 max-w-2xl mx-auto py-12 pb-24 sm:py-24 px-6">
+        <main class="min-h-dvh flex flex-col gap-8">
+      <a href="/projects" class="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors">
+        <svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        <span x-show="$store.global.lang === 'id'">Kembali ke proyek</span>
+        <span x-show="$store.global.lang === 'en'">Back to projects</span>
+      </a>
+
+      <article>
+          <img src="/project-mas-jasanet.png" alt="Asset Management PT Jasanet" class="w-full rounded-xl mb-8 object-cover max-h-96" />
+
+        <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl mb-4">Asset Management PT Jasanet</h1>
+
+        <div class="prose text-pretty leading-relaxed text-muted-foreground dark:prose-invert mb-8">
+          <div x-show="$store.global.lang === 'en'"><h3>Laravel Asset Management</h3><p>Built an internal web application using PHP Laravel and MySQL for tracking and managing company assets and inventory. Features include asset registration, categorization, status tracking, and reporting dashboard.</p></div>
+          <div x-show="$store.global.lang === 'id'"><h3>Manajemen Aset Laravel</h3><p>Membangun aplikasi web internal menggunakan PHP Laravel dan MySQL untuk melacak dan mengelola aset serta inventaris perusahaan. Fitur meliputi registrasi aset, kategorisasi, pelacakan status, dan dashboard laporan.</p></div>
+        </div>
+
+          <div class="flex flex-wrap gap-2 mb-8">
+              <span class="text-sm font-medium border border-border h-8 w-fit px-3 rounded-lg flex items-center">PHP</span>
+              <span class="text-sm font-medium border border-border h-8 w-fit px-3 rounded-lg flex items-center">Laravel</span>
+              <span class="text-sm font-medium border border-border h-8 w-fit px-3 rounded-lg flex items-center">MySQL</span>
+              <span class="text-sm font-medium border border-border h-8 w-fit px-3 rounded-lg flex items-center">Bootstrap</span>
+          </div>
+
+        <div class="flex gap-4">
+            <a href="https://mas.jasanet.co.id" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
+              <span x-show="$store.global.lang === 'id'">Lihat Situs</span>
+              <span x-show="$store.global.lang === 'en'">Live Site</span>
+            </a>
+        </div>
+      </article>
+    </main>
+  </div><div class="pointer-events-none fixed inset-x-0 bottom-4 z-30">
+  <div class="pointer-events-auto mx-auto flex h-12 w-fit items-center gap-1.5 rounded-full border bg-card/90 backdrop-blur-3xl px-2 shadow-[0_0_10px_3px] shadow-primary/5">
+    <a href="/" class="flex items-center justify-center size-9 rounded-full bg-background text-muted-foreground hover:text-foreground hover:bg-muted border border-border transition-colors" title="Beranda">
+      <svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+    </a>
+    <a href="/projects" class="flex items-center justify-center size-9 rounded-full bg-background text-muted-foreground hover:text-foreground hover:bg-muted border border-border transition-colors" title="Proyek">
+      <svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+    </a>
+    <a href="/certifications" class="flex items-center justify-center size-9 rounded-full bg-background text-muted-foreground hover:text-foreground hover:bg-muted border border-border transition-colors" title="Sertifikasi">
+      <svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+    </a>
+    <a href="/cv" class="flex items-center justify-center size-9 rounded-full bg-background text-muted-foreground hover:text-foreground hover:bg-muted border border-border transition-colors" title="CV">
+      <svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+    </a>
+    <div class="w-px h-6 bg-border"></div>
+    <button @click="$store.global.toggleLang()" class="flex items-center justify-center size-9 rounded-full bg-background text-muted-foreground hover:text-foreground hover:bg-muted border border-border transition-colors text-xs font-bold" title="Bahasa" aria-label="Toggle language">
+      <span x-text="$store.global.lang.toUpperCase()">EN</span>
+    </button>
+    <button @click="$store.global.toggleDark()" class="flex items-center justify-center size-9 rounded-full bg-background text-muted-foreground hover:text-foreground hover:bg-muted border border-border transition-colors" title="Tema" aria-label="Toggle dark mode">
+      <svg x-show="!$store.global.dark" class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+      <svg x-show="$store.global.dark" class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+    </button>
+  </div>
+</div>
+</body>
+</html>

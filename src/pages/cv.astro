@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV | Arif Febrianto</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/assets/app-gCiAbyz9.css">
+  <script type="module" src="/assets/main-DSFVCk8T.js"></script>
+  <style>
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 8mm 12mm;
+      }
+      html, body {
+        background: #ffffff !important;
+        color: #0f172a !important;
+        font-size: 11px !important;
+        line-height: 1.35 !important;
+      }
+      .no-print,
+      .pointer-events-none.fixed,
+      .flickering-grid,
+      nav {
+        display: none !important;
+      }
+      .cv-container {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .cv-main {
+        gap: 12px !important;
+        min-height: auto !important;
+      }
+      .section-box {
+        margin-bottom: 0 !important;
+      }
+      .section-title {
+        font-size: 13px !important;
+        margin-bottom: 4px !important;
+        padding-bottom: 2px !important;
+        border-bottom: 1px solid #cbd5e1 !important;
+      }
+      .item-title {
+        font-size: 11.5px !important;
+      }
+      .item-sub {
+        font-size: 10.5px !important;
+      }
+      .item-desc {
+        font-size: 10px !important;
+        margin-top: 2px !important;
+      }
+      .skill-tag {
+        font-size: 9.5px !important;
+        padding: 1px 6px !important;
+        border: 1px solid #cbd5e1 !important;
+        background: #f8fafc !important;
+        color: #0f172a !important;
+      }
+      .contact-box {
+        padding: 6px !important;
+        margin-top: 4px !important;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-background text-foreground font-sans antialiased relative">
+  <div class="flickering-grid no-print" x-data="flickeringGrid({ squareSize: 2, gridGap: 2, maxOpacity: 0.3 })">
+    <canvas x-ref="canvas" class="pointer-events-none"></canvas>
+  </div>
+
+  <div class="cv-container relative z-10 max-w-2xl mx-auto py-10 px-6">
+    <main class="cv-main flex flex-col gap-6">
+      
+      <!-- Top actions -->
+      <div class="no-print flex items-center justify-between gap-4">
+        <a href="/" class="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          Kembali
+        </a>
+        <button onclick="window.print()" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border text-sm font-medium hover:bg-muted transition-colors cursor-pointer">
+          <svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          Download PDF
+        </button>
+      </div>
+
+      <!-- Header -->
+      <section class="section-box">
+        <h1 class="text-3xl font-bold tracking-tight mb-1">Arif Febrianto</h1>
+        <p class="text-primary font-medium text-base">Network Engineer &amp; IT Professional</p>
+        <p class="text-xs text-muted-foreground mt-1">Jakarta, Indonesia • ariffb755@gmail.com • linkedin.com/in/ariffb • github.com/ariffb25</p>
+      </section>
+
+      <!-- Ringkasan -->
+      <section class="section-box">
+        <h2 class="section-title text-base font-bold text-foreground mb-2">Ringkasan Profesional</h2>
+        <p class="text-xs text-muted-foreground leading-relaxed">
+          Network Engineer berpengalaman dalam merancang, konfigurasi, dan memelihara infrastruktur jaringan enterprise. Ahli dalam MikroTik RouterOS, manajemen firewall, VPN, serta troubleshooting jaringan dan administrasi database. Berkomitmen menjaga stabilitas, efisiensi, dan keamanan sistem IT operasional.
+        </p>
+      </section>
+
+      <!-- Pengalaman Kerja -->
+      <section class="section-box">
+        <h2 class="section-title text-base font-bold text-foreground mb-2">Pengalaman Kerja</h2>
+        <div class="space-y-3">
+          <div class="border-l-2 border-muted pl-3">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="item-title font-semibold text-sm">Network Engineer</h3>
+                <p class="item-sub text-xs text-primary">PT Jasanet Mitra Networking Indonesia</p>
+              </div>
+              <span class="text-xs text-muted-foreground flex-none">Sep 2022 - Saat Ini</span>
+            </div>
+            <ul class="item-desc mt-1 text-xs text-muted-foreground list-disc list-inside space-y-0.5">
+              <li>Infrastruktur jaringan (MikroTik RouterOS, firewall, VLAN, VPN) & administrasi server Linux.</li>
+              <li>Pengembangan website company profile dan sistem inventaris gudang serta produksi mesin bordir/laser.</li>
+              <li>Setup & maintenance email hybrid, mail server Zimbra, dan cloud storage private ownCloud.</li>
+              <li>Perawatan/perbaikan hardware laptop/PC dan rekomendasi teknis pengadaan barang IT.</li>
+            </ul>
+          </div>
+
+          <div class="border-l-2 border-muted pl-3">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="item-title font-semibold text-sm">Database Administrator / IT Support (Magang)</h3>
+                <p class="item-sub text-xs text-primary">PT Erajaya Swasembada, Tbk</p>
+              </div>
+              <span class="text-xs text-muted-foreground flex-none">Agu 2021 - Okt 2021</span>
+            </div>
+            <ul class="item-desc mt-1 text-xs text-muted-foreground list-disc list-inside space-y-0.5">
+              <li>Menangani request cancel order dari tiket Jira dan grup WhatsApp.</li>
+              <li>Mengembangkan bot WhatsApp otomatisasi (Node.js & Baileys) terintegrasi script pemrosesan PHP dan API cancel order backend.</li>
+              <li>Dukungan operasional IT support dan troubleshooting harian.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pendidikan -->
+      <section class="section-box">
+        <h2 class="section-title text-base font-bold text-foreground mb-2">Pendidikan</h2>
+        <div class="space-y-2">
+          <div class="border-l-2 border-muted pl-3">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="item-title font-semibold text-sm">S1 Sistem Informasi</h3>
+                <p class="item-sub text-xs text-primary">Universitas Nusa Mandiri</p>
+              </div>
+              <span class="text-xs text-muted-foreground flex-none">2022 - 2024</span>
+            </div>
+            <p class="text-xs text-muted-foreground">IPK 3.93</p>
+          </div>
+
+          <div class="border-l-2 border-muted pl-3">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="item-title font-semibold text-sm">D3 Sistem Informasi</h3>
+                <p class="item-sub text-xs text-primary">Universitas Bina Sarana Informatika</p>
+              </div>
+              <span class="text-xs text-muted-foreground flex-none">2019 - 2022</span>
+            </div>
+            <p class="text-xs text-muted-foreground">IPK 3.97</p>
+          </div>
+
+          <div class="border-l-2 border-muted pl-3">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="item-title font-semibold text-sm">IPA (Science)</h3>
+                <a href="https://sman17jakarta.sch.id" target="_blank" rel="noopener noreferrer" class="item-sub text-xs text-primary hover:underline inline-block">SMAN 17 Jakarta</a>
+              </div>
+              <span class="text-xs text-muted-foreground flex-none">2016 - 2019</span>
+            </div>
+            <p class="text-xs text-muted-foreground">Nilai Rata-rata 82</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Keahlian -->
+      <section class="section-box">
+        <h2 class="section-title text-base font-bold text-foreground mb-2">Keahlian Teknis</h2>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="skill-tag border border-border rounded px-2 py-0.5 text-xs">MikroTik RouterOS</span>
+          <span class="skill-tag border border-border rounded px-2 py-0.5 text-xs">Firewall Configuration</span>
+          <span class="skill-tag border border-border rounded px-2 py-0.5 text-xs">VPN</span>
+          <span class="skill-tag border border-border rounded px-2 py-0.5 text-xs">Network Troubleshooting</span>
+          <span class="skill-tag border border-border rounded px-2 py-0.5 text-xs">VLAN &amp; Bandwidth Mgmt</span>
+          <span class="skill-tag border border-border rounded px-2 py-0.5 text-xs">Database Administration (SQL)</span>
+          <span class="skill-tag border border-border rounded px-2 py-0.5 text-xs">Backup &amp; Recovery</span>
+          <span class="skill-tag border border-border rounded px-2 py-0.5 text-xs">Hardware Maintenance</span>
+          <span class="skill-tag border border-border rounded px-2 py-0.5 text-xs">PHP / Laravel</span>
+          <span class="skill-tag border border-border rounded px-2 py-0.5 text-xs">Linux &amp; Scripting</span>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>

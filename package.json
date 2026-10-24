@@ -1,0 +1,12 @@
+{
+  "name": "ariffb-static",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "astro build",
+    "preview": "astro preview --port 3002 --host"
+  },
+  "dependencies": {
+    "astro": "^5.4.2"
+  }
+}
